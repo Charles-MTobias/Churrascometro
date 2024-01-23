@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>churasco</title>
+    <style>
+        body{
+            margin: 0;
+            border: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header{
+            max-width: 400px;
+            margin: auto;
+            background-color: rgb(206, 227, 241);
+            top: 0;
+            padding: 20px;
+            border-radius: 5px;
+            
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 0;
+        }
+        #header>input{
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 3px;
+            box-sizing: border-box;
+            display: block;
+        }
+        #calc{
+            left: 0;
+            text-align:left;
+            background-color: aqua;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Churrascômetro</h1>
+        <input type="number" name="Adultos"  placeholder="Adultos" id="adultos">
+        <input type="number" name="Crianças"placeholder="Crianças" id="crianças">
+        <input type="number" name="number"placeholder="Duração (h)" id="duracao">
+        <button type="button" id="calc" onclick="calc()">Calcular</button>
+
+        <div id="resultado">
+
+        </div>
+
+    </div>
+    <script src="solo.js"></script>
+</body>
+</html>
