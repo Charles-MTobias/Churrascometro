@@ -23,10 +23,13 @@ function calc(){
 
     let qtdrefri = adultos * refriPP(duracao) + criancas * refriPP(duracao);
 
+    let qtdApagar = qtdcarne/1000 * 24 + qtdcerveja /250 * 5 + qtdrefri /2000 * 10;
+
     resultado.innerHTML = `<h3> Quantidades necessárias para o seu churrasco</h3>`
-    resultado.innerHTML += `<p> ${qtdcarne /1000} kg total de carne</p>`
+    resultado.innerHTML += `<p> ${qtdcarne /1000} kg de carne</p>`
     resultado.innerHTML += `<p> ${Math.ceil(qtdcerveja /250)} Latas de cerveja</p>`
-    resultado.innerHTML += `<p> ${Math.ceil(qtdrefri /2000)} Garrafas de refrigerante e agua</p>`
+    resultado.innerHTML += `<p> ${Math.ceil(qtdrefri /2000)} Garrafas de refrigerante e água</p>`
+    resultado.innerHTML += `<p> R$ ${Math.ceil(qtdApagar)},00 Custo extimado do churrasco</p>`
 }
 
 function canrPP(duracao){
